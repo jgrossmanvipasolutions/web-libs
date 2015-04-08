@@ -64,7 +64,7 @@
   [#return ret]
 [/#function]
 
-[#--
+[#--a
   Takes a URL and outputs the URL with http protocol if it is missing
   @param url URL to check
   @return A link including the protocol
@@ -403,8 +403,8 @@ Get the HTML of a scaled image and make sure it uses either the original image o
     [#if image_w == 0][#local image_w = ""][#else][#local image_w = image_w?c][/#if]
     [#if image_h == 0][#local image_h = ""][#else][#local image_h = image_h?c][/#if]
 	[#if force_dims]
-      [#if width == 0][#local image_w = "auto"][/#if]
-      [#if height == 0][#local image_h = "auto"][/#if]
+      [#if width == 0][#local image_w = ""][/#if]
+      [#if height == 0][#local image_h = ""][/#if]
     [/#if]
     [#local itemprop_html = ""]
     [#if include_itemprop]
